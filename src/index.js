@@ -1,8 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
-//components
+import { Provider } from 'react-redux';
+import store from './store/store';
+// components
 import App from './components/App';
-//styles
+// styles
 import './index.css';
 
-render(<App />, document.getElementById('root'));
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root'),
+);
