@@ -1,5 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-const App = () => <div>TowerIQ_Users</div>;
+import operations from '../redux/operations';
+import UsersView from './UsersView';
+import Pagination from './Pagination';
 
-export default App;
+class App extends Component {
+  state = {};
+
+  componentDidMount() {
+    const { getUsers } = this.props;
+    getUsers();
+  }
+
+  render() {
+    return (
+      <div>
+        <Pagination />
+        <UsersView />
+      </div>
+    );
+  }
+}
+
+const mapDispatchToProp = {
+  getUsers: operations.fetchItems,
+};
+
+export default connect(null, mapDispatchToProp)(App);

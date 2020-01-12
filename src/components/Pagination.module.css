@@ -1,0 +1,41 @@
+.pagination {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.pageNumber {
+  padding: 1.5rem;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.btnprev,
+.btnnext {
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem;
+}
+
+.nextActive,
+.prevActive {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+.prevNotActive,
+.nextNotActive {
+  width: 30px;
+  height: 30px;
+  fill: #7b8aa4;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+}
