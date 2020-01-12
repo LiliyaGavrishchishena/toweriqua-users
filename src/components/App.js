@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
+// operations
 import operations from '../redux/operations';
+// components
 import UsersView from './UsersView';
 import Pagination from './Pagination';
+import RandomUser from './RandomUser';
 
 class App extends Component {
   state = {};
@@ -17,6 +19,7 @@ class App extends Component {
     return (
       <div>
         <Pagination />
+        <RandomUser />
         <UsersView />
       </div>
     );

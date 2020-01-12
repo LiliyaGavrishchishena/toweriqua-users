@@ -12,6 +12,10 @@ const getFiveUsers = createSelector(
       : users.slice(page * limit - limit, page * limit),
 );
 
+const getUsersName = createSelector([getAllUsers], users =>
+  users.map(({ name, surname }) => `${name} ${surname}`),
+);
+
 const getMaxPage = createSelector([getAllUsers, getLimit], (users, limit) =>
   Math.ceil(users.length / limit),
 );
@@ -20,6 +24,7 @@ export default {
   getAllUsers,
   getCurrentPage,
   getFiveUsers,
+  getUsersName,
   getMaxPage,
   getLimit,
 };

@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 // actions
 import actions from '../redux/actions';
-
 // selectors
 import selectors from '../redux/selectors';
 // svg components
@@ -58,8 +57,8 @@ const mapDispatchToProp = {
 export default connect(mapStateToProps, mapDispatchToProp)(Pagination);
 
 Pagination.propTypes = {
-  prev: PropTypes.number.isRequired,
+  prev: PropTypes.func.isRequired,
   currentPage: PropTypes.number.isRequired,
   maxPage: PropTypes.number.isRequired,
-  next: PropTypes.number.isRequired,
+  next: PropTypes.func.isRequired,
 };
