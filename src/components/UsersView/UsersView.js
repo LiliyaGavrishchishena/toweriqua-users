@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 // prop-types
 import PropTypes from 'prop-types';
 // selectors
-import selectors from '../redux/selectors';
+import selectors from '../../redux/selectors';
 // styles
 import styles from './UsersView.module.css';
 

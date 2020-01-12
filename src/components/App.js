@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 // operations
 import operations from '../redux/operations';
 // components
-import UsersView from './UsersView';
-import Pagination from './Pagination';
-import RandomUser from './RandomUser';
+import UsersView from './UsersView/UsersView';
+import Pagination from './Pagination/Pagination';
+import RandomUser from './RandomUser/RandomUser';
 
 class App extends Component {
   state = {};

@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 // prop-types
 import PropTypes from 'prop-types';
 // actions
-import actions from '../redux/actions';
+import actions from '../../redux/actions';
 // selectors
-import selectors from '../redux/selectors';
+import selectors from '../../redux/selectors';
 // svg components
 import { ReactComponent as Next } from './assets/next.svg';
 import { ReactComponent as Prev } from './assets/back.svg';

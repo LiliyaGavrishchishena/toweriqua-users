@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // redux
 import { connect } from 'react-redux';
 // selectors
-import selectors from '../redux/selectors';
+import selectors from '../../redux/selectors';
 // styles
 import styles from './RandomUser.module.css';
 
